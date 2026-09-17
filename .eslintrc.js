@@ -5,5 +5,5 @@ module.exports = {
     'prettier/prettier': 'error',
     'no-unused-vars': 'off',
     '@typescript-eslint/no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
-  }
+  },
 };

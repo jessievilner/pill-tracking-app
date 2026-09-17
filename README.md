@@ -1,3 +1,3 @@
 # Pill Tracking App
 
-A react-native UI for my Pill Tracking Bot  project.
+A react-native UI for my Pill Tracking Bot project.
