@@ -6,8 +6,7 @@
     "orientation": "portrait",
     "scheme": "pilltrackingapp",
     "userInterfaceStyle": "automatic",
-    "ios": {
-    },
+    "ios": {},
     "android": {
       "adaptiveIcon": {
         "backgroundColor": "#E6F4FE"

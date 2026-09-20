@@ -2,6 +2,7 @@ const { defineConfig } = require('eslint/config');
 
 const prettier = require('eslint-plugin-prettier');
 const js = require('@eslint/js');
+const globals = require('globals');
 
 const { FlatCompat } = require('@eslint/eslintrc');
 
@@ -13,6 +14,7 @@ const compat = new FlatCompat({
 
 module.exports = defineConfig([
   {
+    files: ['**/*.{js,jsx,ts,tsx}'],
     extends: compat.extends('expo'),
 
     plugins: {
@@ -20,8 +22,13 @@ module.exports = defineConfig([
     },
 
     rules: {
-      'prettier/prettier': 'error',
       'no-unused-vars': 'off',
+    },
+  },
+  {
+    files: ['eslint.config.js'],
+    languageOptions: {
+      globals: globals.node,
     },
   },
 ]);
