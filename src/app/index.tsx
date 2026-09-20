@@ -1,10 +1,11 @@
-import { Text, View, StyleSheet } from 'react-native';
+import { StyleSheet } from 'react-native';
+import { ThemedView, ThemedText } from '@/components/themed';
 
 export default function Index() {
   return (
-    <View style={styles.container}>
-      <Text>Placeholder.</Text>
-    </View>
+    <ThemedView style={styles.container} colorKind="background">
+      <ThemedText>Placeholder.</ThemedText>
+    </ThemedView>
   );
 }
 
@@ -13,5 +14,8 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
+    margin: 100,
+    borderRadius: 20,
+    borderWidth: 5,
   },
 });
